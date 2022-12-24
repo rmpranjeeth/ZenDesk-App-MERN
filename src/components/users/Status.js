@@ -19,6 +19,7 @@ function Status() {
     );
     if (res.data.statusCode === 200) {
       setData(res.data.issue[0]);
+      console.log(res.data.issue[0])
     }
   };
 
