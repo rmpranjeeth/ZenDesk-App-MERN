@@ -10,7 +10,7 @@ import Login from "./components/users/Login";
 import Signup from "./components/users/SignUp";
 import Home from "./components/users/Home"
 export const CommonContext = React.createContext();
-const apiurl = "http://localhost:8000";
+const apiurl = "https://zen-desk-app-mern.vercel.app";
 
 function App() {
   return (
