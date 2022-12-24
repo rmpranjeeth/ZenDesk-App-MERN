@@ -97,6 +97,7 @@ function Dashboard() {
                       style={{ cursor: "pointer" }}
                       onClick={() => {
                         navigate(`/issue/${e._id}`);
+                        console.log("button triggered")
                       }}
                     >
                       <td>{i + 1}</td>
