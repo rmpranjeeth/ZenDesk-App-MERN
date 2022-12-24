@@ -23,6 +23,7 @@ function Issues() {
     {
       setData(res.data.issue[0]);
       setComment(res.data.issue[0].comments)
+      console.log(res.data.issue[0]);
     }
   }
 
