@@ -18,7 +18,7 @@ function TopBar() {
           <Nav className="ms-auto">
             <Nav.Link onClick={() => navigate("/user-dashboard")}>Home</Nav.Link>
             <Nav.Link onClick={() => navigate("/track-issue")}>Track</Nav.Link>
-            <Nav.Link onClick={()=>navigate('/login')} href="javascript(void)">Logout</Nav.Link>
+            <Nav.Link onClick={()=>navigate('/login')}>Logout</Nav.Link>
           </Nav>
           </Navbar.Collapse>
         </Container>
