@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const {mongoose,usersModel,foodModel,orderModel} = require('../config/dbSchema')
+const {mongoose,usersModel} = require('../config/dbSchema')
 const {hashPassword,hashCompare,createToken,decodeToken,validateToken,adminGaurd} = require('../config/auth')
 require("dotenv").config();
 
