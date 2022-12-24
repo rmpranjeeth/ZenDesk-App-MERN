@@ -1,11 +1,10 @@
 var express = require("express");
 var router = express.Router();
-const { mongodb, dbName, dbUrl } = require("../config/dbConfig");
+
 const { mongoose, issueModel, issueTypeModel } = require("../config/dbSchema");
 const {hashPassword,hashCompare,createToken,decodeToken,validateToken,adminGaurd} = require('../config/auth')
 require("dotenv").config();
 
-mongoose.connect(process.env.dbUrl);
 
 router.get("/issue-types", validateToken, async (req, res) => {
   try {
