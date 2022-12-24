@@ -1,5 +1,5 @@
 const env = {
-    apiurl:"http://localhost:8000"
+    apiurl:"https://zen-desk-app-mern.vercel.app"
 }
 
 export default env;
