@@ -51,6 +51,7 @@ function Issues() {
   return (
     <>
       <AdminNav />
+      <div>Welcome to Issues page</div>
       <div className="col-3 mx-auto mt-5">
         {data !== null ? (
           <>
