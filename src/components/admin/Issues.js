@@ -15,6 +15,7 @@ function Issues() {
 
   let handleLoadTicket = async () => {
     let token = sessionStorage.getItem("token");
+    console.log(token)
     console.log("before axios")
     let res = await axios.get(`${commonContext.apiurl}/issues/${params.id}`,
     console.log("after axios"),
