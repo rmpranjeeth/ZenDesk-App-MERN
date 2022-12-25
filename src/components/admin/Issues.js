@@ -52,7 +52,7 @@ function Issues() {
     <>
       <AdminNav />
       <div className="col-3 mx-auto mt-5">
-        {data !== "" ? (
+        {data !== null ? (
           <>
             <div className="mt-5">
               <h2 className="text-center mb-4">ZenDesk Issues Tracker!</h2>
