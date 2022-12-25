@@ -16,7 +16,7 @@ function AdminNav() {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link onClick={()=>navigate('/dashboard')}>Dashboard</Nav.Link>
-            <Nav.Link onClick={()=>navigate('/login')} href="javascript(void)">Logout</Nav.Link>
+            <Nav.Link onClick={()=>navigate('/login')}>Logout</Nav.Link>
           </Nav>
           </Navbar.Collapse>
         </Container>
