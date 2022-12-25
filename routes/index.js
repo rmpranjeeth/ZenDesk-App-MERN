@@ -155,7 +155,7 @@ router.get("/issues-by-status/:status", validateToken, adminGaurd, async (req, r
 
 router.get("/issues/:id", validateToken, async (req, res) => {
   try {
-    let issue = await issueModel.findOne({ _id: mongodb.ObjectId(req.params.id) });
+    let issue = await issueModel.find({ _id: mongodb.ObjectId(req.params.id) });
     res.send({
       statusCode: 200,
       issue,
