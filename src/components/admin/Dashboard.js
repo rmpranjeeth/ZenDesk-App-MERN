@@ -39,6 +39,7 @@ function Dashboard() {
     if (res.data.statusCode === 200) {
       setStage(stage);
       setData(res.data.issues);
+      console.log("issue by status running")
     }
   };
 
