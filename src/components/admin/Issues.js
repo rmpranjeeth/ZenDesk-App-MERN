@@ -15,8 +15,6 @@ function Issues() {
 
   let handleLoadTicket = async () => {
     let token = sessionStorage.getItem("token");
-    console.log(token)
-    console.log("before axios")
     let res = await axios.get(`${commonContext.apiurl}/issues/${params.id}`,
     {
       headers: { Authorization: `Bearer ${token}` },
@@ -25,14 +23,11 @@ function Issues() {
     {
       setData(res.data.issue[0]);
       setComment(res.data.issue[0].comments)
-      console.log(res.data.issue[0]);
-      console.log("axios succecc")
     }
   }
 
   useEffect(()=>{
       handleLoadTicket();
-      console.log("useEff working")
   },[])
 
   let nextStage = async (stage) => {
@@ -51,7 +46,6 @@ function Issues() {
   return (
     <>
       <AdminNav />
-      <div>Welcome to Issues page</div>
       <div className="col-3 mx-auto mt-5">
         {data !== null ? (
           <>

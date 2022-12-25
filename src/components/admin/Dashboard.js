@@ -39,7 +39,6 @@ function Dashboard() {
     if (res.data.statusCode === 200) {
       setStage(stage);
       setData(res.data.issues);
-      console.log("issue by status running")
     }
   };
 
@@ -98,7 +97,6 @@ function Dashboard() {
                       style={{ cursor: "pointer" }}
                       onClick={() => {
                         navigate(`/issue/${e._id}`);
-                        console.log("button triggered")
                       }}
                     >
                       <td>{i + 1}</td>
